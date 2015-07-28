@@ -1,0 +1,27 @@
+# Site settings
+title: 小胖轩 
+header-img: img/home-bg.jpg
+email: app@codeboy.me
+description: "编码生涯的点点滴滴"
+host: "127.0.0.1"
+baseurl: ""
+url: "http://codeboy.me"
+github_username:  androiddevelop
+zhihu_username: li-yue-dong
+
+# Build settings
+markdown: kramdown 
+
+# markdown: redcarpet
+# redcarpet can auto highlight code, but the lack of header-id make the catalog impossible 
+
+highlighter: pygments
+permalink: pretty
+paginate: 20
+exclude: ["less","node_modules","Gruntfile.js","package.json","README.md","tmp","unless"]
+
+# use Github Flavored Markdown !important
+# document: http://jekyllrb.com/docs/configuration/#kramdown
+
+kramdown:
+  input: GFM
