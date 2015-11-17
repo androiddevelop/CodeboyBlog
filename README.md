@@ -30,9 +30,8 @@
 ## 需要配置的内容:
 1. 修改_config.xml中的信息。
 2. 修改_includes/footer.html中分享的信息。
-3. 修改_layouts/page.html与_layouts/post.html中页面统计信息。
-4. 修改_layouts/post.html中文章评论信息(更换为自己多说评论插件id)。
-5. 修改about/index.html中个人信息。
+3. 修改_layouts/post.html中文章评论信息(更换为自己多说评论插件id)。
+4. 修改about/index.html中个人信息。
 
 ### 更新内容:
 
