@@ -3,33 +3,81 @@ title: 小胖轩
 header-img: img/home-bg.jpg
 email: app@codeboy.me
 description: "编码生涯的点点滴滴"
-host: "127.0.0.1"
-baseurl: ""
-url: "codeboy.me"
+url: "http://127.0.0.1"
 github_username:  androiddevelop
-zhihu_username: li-yue-dong
+zhihu_username: codeboy
 
-# Build settings
-markdown: kramdown 
+# Where things are
+source:       .
+destination:  ./_site
+plugins_dir:  ./_plugins
+layouts_dir:  ./_layouts
+data_dir:     ./_data
+includes_dir: ./_includes
+posts_dir: ./_posts
+#collections:  null
 
-# markdown: redcarpet
-# redcarpet can auto highlight code, but the lack of header-id make the catalog impossible 
+# Handling Reading
+safe:         false
+include:      [".htaccess"]
+exclude:      ["less","node_modules","Gruntfile.js","package.json","README.md","tmp","unless"]
+keep_files:   [".git", ".svn"]
+encoding:     "utf-8"
+markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 
+# Filtering Content
+show_drafts: null
+limit_posts: 0
+future:      false
+unpublished: false
+
+# Plugins
+whitelist: []
+gems:      ["jekyll-paginate"]
+#gems:      []
+
+# Conversion
+markdown:    kramdown
 highlighter: pygments
-permalink: pretty
-paginate: 20
-exclude: ["less","node_modules","Gruntfile.js","package.json","README.md","tmp","unless"]
+lsi:         false
+excerpt_separator: "\n\n"
+incremental: false
 
-# use Github Flavored Markdown !important
-# document: http://jekyllrb.com/docs/configuration/#kramdown
+# Serving
+detach:  false
+port:    4000
+host:    127.0.0.1
+baseurl: "" # does not include hostname
+
+# Outputting
+permalink: pretty
+paginate: 16
+paginate_path: /page/:num
+timezone: Asia/Shanghai
+
+quiet:    false
+defaults: []
+
+# Markdown Processors
+rdiscount:
+  extensions: []
+
+redcarpet:
+  extensions: []
 
 kramdown:
-  input: GFM 
-  extensions:
-    - autolink
-    - footnotes
-    - smart
-  use_coderay: true
-  syntax_highlighter: rouge
+  auto_ids:       true
+  footnote_nr:    1
+  entity_output:  as_char
+  toc_levels:     1..6
+  smart_quotes:   lsquo,rsquo,ldquo,rdquo
+  enable_coderay: false
+  input: GFM
+
   coderay:
-    coderay_line_numbers:  nil 
+    coderay_wrap:              div
+    coderay_line_numbers:      inline
+    coderay_line_number_start: 1
+    coderay_tab_width:         4
+    coderay_bold_every:        10
+    coderay_css:               style
