@@ -7,10 +7,15 @@
 ### 安装方式:
 
 1. 安装jeykll
+
+	gem install jekyll
+	gem install jekyll-paginate
+
 2. 将CodeboyBlog复制到服务器(部署到github.io的方式自行搜索)。
-3. 运行命令生成网站即可。
+3. 运行命令生成网站即可(不建议增量更新)。
     
         jekyll serve --watch &
+        jekyll serve --watch --incremental & //增量更新，不建议使用
 
 为了能够更好的生成网站，我们可以写一个脚本:
 
@@ -28,12 +33,21 @@
 > 启动jekyll服务
 
 ## 需要配置的内容:
-1. 修改_config.xml中的信息。
+1. 修改_config.yml中的信息。
 2. 修改_includes/footer.html中分享的信息。
 3. 修改_layouts/post.html中文章评论信息(更换为自己多说评论插件id)。
 4. 修改about/index.html中个人信息。
+5. 修改_include/nav.html,选择自己需要的导航标签(主页, 应用, 标签, 关于等)
 
 ### 更新内容:
+
+#### 2015-12-09:
+
+1. 更新_config.yml配置，适配jekyll 3.0+版本。
+2. 更新博客中相关链接，便于博客转向https站点。
+3. 去除anchor,标题前面不再显示 `#` 号
+
+#### 2015-10-10:
 
 1. 在Clean Blog的基础上修改，同时加入黄玄在CleanBlog上添加的云标签。
 2. 加入文章搜索功能，pc上可以双击ctrl触发。
