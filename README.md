@@ -12,10 +12,10 @@
 	gem install jekyll-paginate
 
 2. 将CodeboyBlog复制到服务器(部署到github.io的方式自行搜索)。
-3. 运行命令生成网站即可(不建议增量更新)。
+3. 运行命令生成网站即可(经常改变配置的话不建议增量更新)。
     
         jekyll serve --watch &
-        jekyll serve --watch --incremental & //增量更新，不建议使用
+        jekyll serve --watch --incremental & //增量更新
 
 为了能够更好的生成网站，我们可以写一个脚本:
 
