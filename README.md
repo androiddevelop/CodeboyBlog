@@ -33,13 +33,15 @@
 > 启动jekyll服务
 
 ## 需要配置的内容:
-1. 修改_config.yml中的信息。
-2. 修改_includes/footer.html中分享的信息。
-3. 修改_layouts/post.html中文章评论信息(更换为自己多说评论插件id)。
-4. 修改about/index.html中个人信息。
-5. 修改_include/nav.html,选择自己需要的导航标签(主页, 应用, 标签, 关于等)
+1. 修改_config.yml中的信息(知乎等帐号，特别需要注意的是多说评论插件的id必须更换，否则您将不能查看到博客的评论)。
+2. 修改about/index.html中个人信息(如果不需要个人简介，可以在步骤3中去除对应标签)。
+3. 修改_include/nav.html,选择自己需要的导航标签(主页, 应用, 标签, 关于等)
+4. 如果博客底部的github，知乎等需要修改，请编辑_includes/footer.html中分享的信息。
 
 ### 更新内容:
+
+#### 2015-12-20
+1 多说id移动至_config.xml文件中，集中配置
 
 #### 2015-12-09:
 
