@@ -195,7 +195,7 @@ hr.small {
   background-size: cover;
   -o-background-size: cover;
   margin-bottom: 0px;
-  /* 0 on mobile, modify by Hux */
+  /* 0 on mobile */
 }
 @media only screen and (min-width: 768px) {
   .intro-header {
@@ -335,7 +335,7 @@ hr.small {
 }
 @media only screen and (min-width: 768px) {
   .post-content-preview {
-    font-size: 14px;
+    font-size: 18px;
   }
 }
 .section-heading {
@@ -496,7 +496,7 @@ img::-moz-selection {
 body {
   webkit-tap-highlight-color: #0085a1;
 }
-/* Hux add tags support */
+/* add tags support */
 .tags {
   margin-bottom: -5px;
 }
@@ -614,7 +614,7 @@ body {
   }
 }
 /* Tags support End*/
-/* Hux make all img responsible in post-container */
+/* make all img responsible in post-container */
 .post-container img {
   display: block;
   max-width: 100%;
@@ -624,7 +624,7 @@ body {
 .post-container img.shadow {
   box-shadow: rgba(0, 0, 0, 0.258824) 0px 2px 5px 0px;
 }
-/* Hux Optimize UserExperience */
+/* Optimize UserExperience */
 .navbar-default .navbar-toggle:focus,
 .navbar-default .navbar-toggle:hover {
   background-color: inherit;
@@ -632,7 +632,7 @@ body {
 .navbar-default .navbar-toggle:active {
   background-color: #ddd;
 }
-/* Hux customize Style for navBar button */
+/* customize Style for navBar button */
 .navbar-default .navbar-toggle {
   border-color: transparent;
   padding: 14px 11px;
@@ -648,7 +648,7 @@ body {
 .navbar-default .navbar-toggle .icon-bar + .icon-bar {
   margin-top: 3px;
 }
-/* Hux customize Style for Duoshuo */
+/* customize Style for Duoshuo */
 .comment #ds-thread {
   margin-top: 20px;
 }
