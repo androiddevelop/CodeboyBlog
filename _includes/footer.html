@@ -98,156 +98,6 @@
 </script>
 <link href="https://cdn.bootcss.com/highlight.js/8.6/styles/github.min.css" rel="stylesheet">
 
-
-<script>
-    $(document).ready(function () {
-        var time1 = 0;
-        var show = false;
-        var names = new Array(); //文章名字等
-        var urls = new Array(); //文章地址
-        $(document).keyup(function (e) {
-            var time2 = new Date().getTime();
-            if (e.keyCode == 17) {
-                var gap = time2 - time1;
-                time1 = time2;
-                if (gap < 500) {
-                    if (show) {
-                        $(".search-tool").css("display", "none");
-                        show = false;
-                    } else {
-                        $(".search-tool").css("display", "block");
-                        show = true;
-                        $("#search-content").val("");
-                        $("#search-content").focus();
-                    }
-                    time1 = 0;
-                }
-			}else if(e.keyCode == 27){
-                    $(".search-tool").css("display", "none");
-                    show = false;
-                    time1 = 0;
-                }
-        });
-
- 		$("#search-content").keyup(function (e) {
-            var time2 = new Date().getTime();
-            if (window.event.keyCode == 17) {
-                var gap = time2 - time1;
-                time1 = time2;
-                if (gap < 500) {
-                    if (show) {
-                        $(".search-tool").css("display", "none");
-                        show = false;
-                    } else {
-                        $(".search-tool").css("display", "block");
-                        show = true;
-                        $("#search-content").val("");
-                        $("#search-content").focus();
-                    }
-                    time1 = 0;
-                }
-            }
-        });
-
-        $("#close-btn").click(function () {
-            $(".search-tool").css("display", "none");
-            show = false;
-            time1 = 0;
-        });
-
-        $("#search-btn").click(function(){
-            $(".search-tool").css("display", "block");
-            show = true;
-            $("#search-content").val("");
-            $("#search-content").focus();
-            time1 = 0;
-        });
-
-        $.getJSON("/search.json").done(function (data) {
-            if (data.code == 0) {
-                for (var index in data.data) {
-                    var item = data.data[index];
-                    names.push(item.title);
-                    urls.push(item.url);
-                }
-
-                $("#search-content").typeahead({
-                    source: names,
-
-                    afterSelect: function (item) {
-						$(".search-tool").css("display", "none");
-                        show = false;
-                        window.location.href = (urls[names.indexOf(item)]);
-                        return item;
-                    }
-                });
-            }
-        });
-
-    });
-</script>
-
-    <style>
-        @media screen and (min-width: 768px) {
-            .dropdown-menu {
-                float: none;
-                font-size: 20px;
-                width: 70%;
-                margin: 0 15%;
-            }
-
-			.search-tool ul{
-                 width: 70% ;
-                 white-space:nowrap;
-                 overflow:hidden;
-                 text-overflow: ellipsis;
-             }
-
-
-            .search-content {
-                width: 70%;
-                margin: 0 15%;
-                position: absolute;
-                top: 13%;
-                left: auto;
-                right: auto;
-                font-size: 22px;
-                height: 50px;
-                background-color: #eee;
-                color: black;
-                opacity: 1.0;
-            }
-        }
-
-        @media screen and (max-width: 767px) {
-            .dropdown-menu {
-                float: none;
-                font-size: 20px;
-                width: 96%;
-                margin: 0 2%;
-            }
-			.search-tool ul{
-				width: 96% ;
-				white-space:nowrap; 
-				overflow:hidden; 
-				text-overflow: ellipsis;
-			}
-
-            .search-content {
-                width: 96%;
-                margin: 0 2%;
-                position: absolute;
-                top: 10%;
-                left: auto;
-                right: auto;
-                font-size: 22px;
-                height: 50px;
-                background-color: #eee;
-                color: black;
-                opacity: 1.0;
-            }
-        }
-    </style>
 <div class="search-tool" style="position: fixed; top: 0px ; bottom: 0px; left: 0px; right:  0px;
       opacity: 0.95; background-color: #111111; z-index: 9999; display: none;">
     <input type="text" class="form-control search-content" id="search-content" style="position: fixed; top: 60px" 
@@ -255,10 +105,16 @@
            >
 
     <div style="position: fixed; top: 16px; right: 16px;">
-        <img src="/img/close.png"  id="close-btn"/>
+        <img src="/search/img/cb-close.png"  id="close-btn"/>
     </div>
 </div>
 
 <div style="position: fixed; right: 16px; bottom: 20px;">
-    <img src="/img/search.png"  id="search-btn"  title="双击ctrl试一下"/>
+    <img src="/search/img/cb-search.png"  id="search-btn"  title="双击ctrl试一下"/>
 </div>
+
+<link rel="stylesheet" href="{{ "/search/css/cb-search.css" | prepend: site.baseurl }}">
+
+<script src="{{ "/search/js/bootstrap3-typeahead.min.js" | prepend: site.baseurl }}"></script>
+<script src="{{ "/search/js/cb-search.js" | prepend: site.baseurl }}"></script>
+
