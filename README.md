@@ -1,6 +1,6 @@
 # CodeboyBlog
 
-[codeboy.me](http://codeboy.me)的网站模板
+[codeboy.me](http://codeboy.me)的网站模板，其中搜索模块可以单独安装，地址[https://github.com/androiddevelop/jekyll-search](https://github.com/androiddevelop/jekyll-search)
 
 ![网站截图](codeboy.me.png)
 
