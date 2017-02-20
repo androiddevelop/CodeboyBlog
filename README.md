@@ -46,6 +46,10 @@
 
 ### 更新内容:
 
+#### 2017-02-19
+
+- 修正文章双滚动条
+
 #### 2016-11-22
 
 - 升级jekyll-search(v1.0.1), 兼容firefox。 (/search/js/cb-search.js)
