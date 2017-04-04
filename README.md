@@ -7,6 +7,8 @@
 
 ![网站截图](codeboy.me.png)
 
+本工程实时预览地址 [blogtest.codeboy.me](http://blogtest.codeboy.me)
+
 ### 安装方式:
 
 1. 安装jeykll
@@ -43,6 +45,7 @@
 2. 修改about/index.html中个人信息(如果不需要个人简介，可以在步骤3中去除对应标签)。
 3. 修改_include/nav.html,选择自己需要的导航标签(主页, 应用, 标签, 关于等)
 4. 如果博客底部的github，知乎等需要修改，请编辑_includes/footer.html中分享的信息。
+5. 去除CNAME文件，或者CNAME文件中的域名更换为您的博客域名。
 
 ### 更新内容:
 
