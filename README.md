@@ -9,17 +9,19 @@
 
 本工程实时预览地址 [blogtest.codeboy.me](http://blogtest.codeboy.me)
 
+博客可以简单的搭配微信小程序查看, 具体查看 [https://github.com/androiddevelop/WechatBlog](https://github.com/androiddevelop/WechatBlog)
+
 ### 安装方式:
 
 1. 安装jeykll
-	
+
 	```
 	gem install jekyll
 	gem install jekyll-paginate
 	```
 2. 将CodeboyBlog复制到服务器(部署到github.io的方式自行搜索)。
 3. 运行命令生成网站即可(经常改变配置的话不建议增量更新)。
-    
+
     ```
     jekyll serve --watch &
     jekyll serve --watch --incremental &  ##增量更新
@@ -32,7 +34,7 @@
     cd /path/to/blog
     jekyll serve --watch &
     ```
-    
+
 > ps开头的命令是关闭所有jekyll的进程
 >
 > cd到网站的根目录
@@ -48,6 +50,10 @@
 5. 去除CNAME文件，或者CNAME文件中的域名更换为您的博客域名。
 
 ### 更新内容:
+
+#### 2017-11-17
+
+- 添加初版微信小程序支持，可以便捷创建专属于自己博客的小程序。
 
 #### 2017-04-05
 

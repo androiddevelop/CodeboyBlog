@@ -1,0 +1,8 @@
+---
+layout: null
+---
+{% for post in site.posts %}
+    {% if forloop.rindex == cb_page_index  %}
+         {{ post.content }}
+    {% endif %}
+{% endfor %}
