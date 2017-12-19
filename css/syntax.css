@@ -82,3 +82,38 @@
 .highlight .vi { color: teal; }
 .highlight .il { color: #009999; }
 .highlight .gc { color: #999; background-color: #EAF2F5; }
+
+.hljs {
+	border: 0;
+	font-family: "Consulas", "Courier New", Courier, mono, serif;
+	font-size: 14px;
+	/*background: #f8f8f8 !important;*/
+	display: block;
+	padding: 1px;
+	margin: 0;
+	width: 100%;
+	font-weight: 200;
+	color: #333;
+	white-space: pre-wrap
+}
+.hljs ul {
+	list-style: decimal;
+	/*background-color: #f8f8f8;*/
+	margin: 0px 0px 0 36px !important;
+	padding: 0px;
+  right: -14px;
+}
+.hljs ul li {
+	list-style: decimal-leading-zero;
+	border-left: 1px solid #ccc !important;
+	/*background: #fff;*/
+  padding: 1px 5px 1px 10px !important;
+	margin: 0 !important;
+	/*line-height: 14px;*/
+	word-break: break-all;
+	word-wrap: break-word;
+}
+.hljs ul li:nth-of-type(even) {
+	/*background-color: #f8f8f8;*/
+	/*color: inherit;*/
+}

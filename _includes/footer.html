@@ -12,7 +12,7 @@
                             </span>
                         </a>
                     </li>
-                    
+
                     {% if site.zhihu_username %}
                     <li>
                         <a target="_blank" href="https://www.zhihu.com/people/{{ site.zhihu_username }}">
@@ -51,7 +51,7 @@
 <script src="{{ "/js/codeboy.min.js " | prepend: site.baseurl }}"></script>
 
 <!-- TODO: only load in tag.html -->
-<script src="/js/jquery.tagcloud.js" type="text/javascript" charset="utf-8"></script> 
+<script src="/js/jquery.tagcloud.js" type="text/javascript" charset="utf-8"></script>
 <script language="javascript">
     $.fn.tagcloud.defaults = {
         //size: {start: 1, end: 1, unit: 'em'},
@@ -100,6 +100,14 @@
 <script src="{{ "/search/js/bootstrap3-typeahead.min.js" | prepend: site.baseurl }}"></script>
 <script src="{{ "/search/js/cb-search.js" | prepend: site.baseurl }}"></script>
 
+<script>
+//代码高亮自定义
+$("code").each(function(){
+  var content =  $(this).html().replace(/\n/g,"\n</li><li>");
+  $(this).html("<ul><li>" + content.substring(0, content.length - 4) +"</ul>");
+});
+</script>
+
 <div style="display:none;">
-  <script src="//s19.cnzz.com/z_stat.php?id=1000478693&web_id=1000478693" language="JavaScript"></script>	
+  <script src="//s19.cnzz.com/z_stat.php?id=1000478693&web_id=1000478693" language="JavaScript"></script>
 </div>
