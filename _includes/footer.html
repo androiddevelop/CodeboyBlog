@@ -104,7 +104,11 @@
 //代码高亮自定义
 $("code").each(function(){
   var content =  $(this).html().replace(/\n/g,"\n</li><li>");
-  $(this).html("<ul><li>" + content.substring(0, content.length - 4) +"</ul>");
+  if(content.indexOf('<li>') == -1){
+    //适配`abc`，放行
+  }else{
+      $(this).html("<ul><li>" + content.substring(0, content.length - 4) +"</ul>"); //适配```
+  }
 });
 </script>
 
