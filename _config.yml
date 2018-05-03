@@ -7,8 +7,10 @@ url: "http://127.0.0.1"
 description: "编码生涯的点点滴滴"
 github_username:  androiddevelop
 zhihu_username: codeboy
-cloud_tie_public_key: "\"7a06774f1f184badbb64d9af7c3d5c2c\""
-##########################上述信息需要您修改,cloud_tie_public_key两侧必须有引号############################
+
+#changyan_appid: "\"changyan_appid"\"
+#changyan_conf: "\"changyan_conf"\"
+##########################上述信息需要您修改,changyan_appid、changyan_conf############################
 
 
 # Where things are

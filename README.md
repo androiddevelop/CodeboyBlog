@@ -46,13 +46,17 @@ CodeboyBlog
 
 ## 需要配置的内容:
 
-1. 修改_config.yml中的信息(知乎等帐号，特别需要注意的是网易云跟贴(cloud_tie_public_key)必须更换，否则您将不能查看到博客的评论)。
+1. 修改_config.yml中的信息(知乎等帐号，特别需要注意的是畅言配置(changyan_appid和changyan_appid)必须更换，否则您将不能查看到博客的评论)。 畅言的申请地址 [http://changyan.kuaizhan.com/](http://changyan.kuaizhan.com/)
 2. 修改about/index.html中个人信息(如果不需要个人简介，可以在步骤3中去除对应标签)。
 3. 修改_include/nav.html,选择自己需要的导航标签(主页, 应用, 标签, 关于等)
 4. 如果博客底部的github，知乎等需要修改，请编辑_includes/footer.html中分享的信息。
 5. 去除CNAME文件，或者CNAME文件中的域名更换为您的博客域名。
 
 ## 更新内容:
+
+#### 2018-05-03
+
+- 评论组件调整为畅言。
 
 #### 2017-12-19
 
