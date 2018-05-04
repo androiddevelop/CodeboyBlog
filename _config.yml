@@ -8,8 +8,8 @@ description: "编码生涯的点点滴滴"
 github_username:  "androiddevelop"
 zhihu_username: "codeboy"
 
-changyan_appid: "\"changyan_appid"\"
-changyan_conf: "\"changyan_conf"\"
+changyan_appid: "'changyan_appid'"
+changyan_conf: "'changyan_conf'"
 ##########################上述信息需要您修改,changyan_appid、changyan_conf############################
 
 
