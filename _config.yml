@@ -1,12 +1,12 @@
 ######################站点全局信息，需要部分修改#########################
 # Site settings
-title: 小胖轩 
-header-img: img/home-bg.jpg
-email: app@codeboy.me
+title: "小胖轩" 
+header-img: "img/home-bg.jpg"
+email: "app@codeboy.me"
 url: "http://127.0.0.1"
 description: "编码生涯的点点滴滴"
-github_username:  androiddevelop
-zhihu_username: codeboy
+github_username:  "androiddevelop"
+zhihu_username: "codeboy"
 
 changyan_appid: "\"changyan_appid"\"
 changyan_conf: "\"changyan_conf"\"
