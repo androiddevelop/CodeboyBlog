@@ -60,4 +60,18 @@ jQuery(document).ready(function($) {
                 this.previousTop = currentTop;
             });
     }
+    
+    hljs.initHighlightingOnLoad();
+    $("pre code").each(function () {
+        if ($(this).attr('class') !== "language-nohighlight") {
+            let content = $(this).html();
+            //单行不进行操作
+            if (content.split('\n').length <= 4) {
+                return;
+            }
+            let content2 = content.replace(/\n/g, "\n</li><li>");
+            content2 = content2.substring(0, content2.length - 4);
+            $(this).html("<ul><li>" + content2 + "</ul>");
+        }
+    })
 });

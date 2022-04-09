@@ -3,3 +3,4 @@ _site/
 .idea/
 *.iml
 wechat/content/*
+.jekyll-cache/*

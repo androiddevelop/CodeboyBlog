@@ -64,12 +64,6 @@ timezone: Asia/Shanghai
 quiet:    false
 defaults: []
 
-# Markdown Processors
-rdiscount:
-  extensions: []
-
-redcarpet:
-  extensions: []
 
 # Markdown Processors
 kramdown:
@@ -78,12 +72,11 @@ kramdown:
   entity_output:  as_char
   toc_levels:     1..6
   smart_quotes:   lsquo,rsquo,ldquo,rdquo
-  syntax_highlighter: true
   input: GFM
 
   syntax_highlighter_opts:
     wrap:              div
-    line_numbers:      inline
+    line_numbers:      nil
     line_number_start: 1
     tab_width:         4
     bold_every:        10

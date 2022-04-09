@@ -75,11 +75,7 @@
 </script>
 
 <!-- Highlight.js -->
-<script>
-    async("//cdn.bootcss.com/highlight.js/9.4.0/highlight.min.js",function(){
-        hljs.initHighlightingOnLoad();
-    })
-</script>
+<script src="//cdn.bootcss.com/highlight.js/9.4.0/highlight.min.js"></script>
 <link href="//cdn.bootcss.com/highlight.js/9.4.0/styles/github.min.css" rel="stylesheet">
 
 <div class="cb-search-tool" style="position: fixed; top: 0px ; bottom: 0px; left: 0px; right:  0px;
@@ -99,20 +95,6 @@
 
 <script src="{{ "/search/js/bootstrap3-typeahead.min.js" | prepend: site.baseurl }}"></script>
 <script src="{{ "/search/js/cb-search.js" | prepend: site.baseurl }}"></script>
-
-<script>
-$(document).ready(function(){
-  //代码高亮自定义
-  $("code").each(function(){
-    var content =  $(this).html().replace(/\n/g,"\n</li><li>");
-    if(content.indexOf('<li>') == -1){
-      //适配`abc`，放行
-    }else{
-        $(this).html("<ul><li>" + content.substring(0, content.length - 4) +"</ul>"); //适配```
-    }
-  });
-})
-</script>
 
 <div style="display:none;">
   <script src="//s19.cnzz.com/z_stat.php?id=1000478693&web_id=1000478693" language="JavaScript"></script>
